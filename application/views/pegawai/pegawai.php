@@ -13,6 +13,7 @@
           <th>tanggal_lahir_pegawai</th>
           <th>agama_pegawai</th>
           <th>status_pegawai</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -36,6 +37,11 @@
             </td>
             <td>
               <?php echo $dpegawai['status_pegawai'] ?>
+            </td>
+            <td>
+              <a href="<?= base_url('pegawai/edit/')?><?= $dpegawai['id_pegawai'];?>" class="btn btn-primary">Edit</a>
+              <a href="<?= base_url('pegawai/hapus/')?><?= $dpegawai['id_pegawai'];?>" class="btn btn-danger">Hapus</a>
+              <a href="" class="btn btn-primary">Detail</a>
             </td>
           </tr>
 
