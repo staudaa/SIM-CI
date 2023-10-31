@@ -59,5 +59,15 @@ class Kelas extends CI_Controller
     $this->M_kelas->hapusKelas($id);
     redirect('kelas');
   }
+  public function detail($id)
+  {
+    $data['title'] = 'detail kelas';
+    $data['kelas'] = $this->M_kelas->getKelasById($id);
+
+    $this->load->view('template/header', $data);
+    $this->load->view('template/sidebar');
+    $this->load->view('kelas/detail');
+    $this->load->view('template/footer');
+  }
 }
 ?>
