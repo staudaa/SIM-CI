@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
               <label for="tanggal_lahir_pegawai">tanggal_lahir_pegawai</label>
-              <input type="text" class="form-control" id="tanggal_lahir_pegawai" name="tanggal_lahir_pegawai">
+              <input type="date" class="form-control" id="tanggal_lahir_pegawai" name="tanggal_lahir_pegawai">
             
             </div>
             <div class="form-group">

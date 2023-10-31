@@ -39,9 +39,9 @@
               <?php echo $dpegawai['status_pegawai'] ?>
             </td>
             <td>
-              <a href="<?= base_url('pegawai/edit/')?><?= $dpegawai['id_pegawai'];?>" class="btn btn-primary">Edit</a>
-              <a href="<?= base_url('pegawai/hapus/')?><?= $dpegawai['id_pegawai'];?>" class="btn btn-danger">Hapus</a>
-              <a href="" class="btn btn-primary">Detail</a>
+              <a href="<?= base_url('pegawai/edit/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-primary">Edit</a>
+              <a href="<?= base_url('pegawai/hapus/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-danger">Hapus</a>
+              <a href="<?= base_url('pegawai/detail/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-primary">Detail</a>
             </td>
           </tr>
 

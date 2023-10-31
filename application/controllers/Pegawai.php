@@ -21,7 +21,7 @@ class Pegawai extends CI_Controller
   public function tambah()
   {
     $data['title'] = 'tambah data pegawai';
- 
+
     $this->form_validation->set_rules('status', 'status pegawai', 'required');
 
     if ($this->form_validation->run() == false) {
@@ -40,7 +40,7 @@ class Pegawai extends CI_Controller
   {
     $data['title'] = 'edit data pegawai';
     $data['pegawai'] = $this->M_pegawai->getPegawaiById($id);
- 
+
     $this->form_validation->set_rules('nama_pegawai', 'status pegawai', 'required');
     $this->form_validation->set_rules('tempat_lahir_pegawai', 'tempat lahir pegawai', 'required');
     $this->form_validation->set_rules('tanggal_lahir_pegawai', 'tanggal lahir pegawai', 'required');
@@ -62,6 +62,16 @@ class Pegawai extends CI_Controller
   {
     $this->M_pegawai->hapusPegawai($id);
     redirect('pegawai');
+  }
+  public function detail($id)
+  {
+    $data['title'] = 'detail pegawai';
+    $data['pegawai'] = $this->M_pegawai->getPegawaiById($id);
+
+    $this->load->view('template/header', $data);
+    $this->load->view('template/sidebar');
+    $this->load->view('pegawai/detail');
+    $this->load->view('template/footer');
   }
 }
 ?>
