@@ -57,4 +57,14 @@ class Jurusan extends CI_Controller
     $this->M_jurusan->hapusJurusan($id);
     redirect('jurusan');
   }
+  public function detail($id)
+  {
+    $data['title'] = 'detail jurusan';
+    $data['jurusan'] = $this->M_jurusan->getJurusanById($id);
+
+    $this->load->view('template/header', $data);
+    $this->load->view('template/sidebar');
+    $this->load->view('jurusan/detail');
+    $this->load->view('template/footer');
+  }
 }
