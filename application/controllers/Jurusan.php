@@ -21,6 +21,7 @@ class Jurusan extends CI_Controller
   {
     $data['title'] = 'tambah data siswa';
     $this->form_validation->set_rules('kaproli', 'nama kaproli', 'required');
+
     if ($this->form_validation->run() == FALSE) {
       $this->load->view('template/header', $data);
       $this->load->view('template/sidebar');
@@ -31,6 +32,29 @@ class Jurusan extends CI_Controller
       redirect('jurusan');
     }
   }
-}
+  public function edit($id)
+  {
+    $data['title'] = 'edit data siswa';
+    $data['jurusan'] = $this->M_jurusan->getJurusanById($id);
 
-?>
+    $this->form_validation->set_rules('id_kelas', 'nama kelas', 'required');
+    $this->form_validation->set_rules('nama_keahlian', 'nama keahlian', 'required');
+    $this->form_validation->set_rules('kaproli', 'nama kaproli', 'required');
+    $this->form_validation->set_rules('deskripsi', 'nama deskripsi', 'required');
+
+    if ($this->form_validation->run() == FALSE) {
+      $this->load->view('template/header', $data);
+      $this->load->view('template/sidebar');
+      $this->load->view('jurusan/edit', $data);
+      $this->load->view('template/footer');
+    } else {
+      $this->M_jurusan->editJurusan();
+      redirect('jurusan');
+    }
+  }
+  public function hapus($id)
+  {
+    $this->M_jurusan->hapusJurusan($id);
+    redirect('jurusan');
+  }
+}

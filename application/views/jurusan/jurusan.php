@@ -12,6 +12,7 @@
           <th>nama_keahlian</th>
           <th>kaproli</th>
           <th>deskripsi</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -32,6 +33,11 @@
             </td>
             <td>
               <?php echo $djurusan['deskripsi'] ?>
+            </td>
+            <td>
+              <a href="<?= base_url('jurusan/edit/')?><?= $djurusan['id_keahlian']; ?>" class="btn btn-primary">edit</a>
+              <a href="<?= base_url('jurusan/hapus/')?><?= $djurusan['id_keahlian']; ?>" class="btn btn-danger">hapus</a>
+              <a href="" class="btn btn-primary">detail</a>
             </td>
           </tr>
         </tbody>
