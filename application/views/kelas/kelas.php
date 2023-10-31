@@ -17,22 +17,32 @@
       </thead>
       <tbody>
         <?php $no = 1;
-        foreach ($kelas as $dkelas) : ?>
+        foreach ($kelas as $dkelas): ?>
           <tr>
-            <td><?= $no++ ?></td>
-            <td><?php echo $dkelas['kode_kelas'] ?></td>
-            <td><?php echo $dkelas['kode_kelas'] ?></td>
-            <td><?php echo $dkelas['nama_kelas'] ?></td>
-            <td><?php echo $dkelas['wali_kelas'] ?></td>
+            <td>
+              <?= $no++ ?>
+            </td>
+            <td>
+              <?php echo $dkelas['id_keahlian'] ?>
+            </td>
+            <td>
+              <?php echo $dkelas['kode_kelas'] ?>
+            </td>
+            <td>
+              <?php echo $dkelas['nama_kelas'] ?>
+            </td>
+            <td>
+              <?php echo $dkelas['wali_kelas'] ?>
+            </td>
             <td>
               <a href="<?= base_url('kelas/edit/') ?><?= $dkelas['id_kelas']; ?>" class="btn btn-primary">edit</a>
               <a href="<?= base_url('kelas/hapus/') ?><?= $dkelas['id_kelas']; ?>" class="btn btn-danger">hapus</a>
-              <a href="" class="btn btn-primary">detail</a>
+              <a href="<?= base_url('kelas/detail/') ?><?= $dkelas['id_kelas']; ?>" class="btn btn-primary">detail</a>
             </td>
           </tr>
 
-      </tbody>
-    <?php endforeach; ?>
+        </tbody>
+      <?php endforeach; ?>
     </table>
   </div>
   <!-- /.card-body -->
