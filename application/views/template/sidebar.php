@@ -16,7 +16,7 @@
 							Tambah Data
 						</button>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="<?= base_url('data/tambah') ?>">Data siswa</a>
+							<a class="dropdown-item" href="<?= base_url('data/add') ?>">Data siswa</a>
 							<a class="dropdown-item" href="<?= base_url('jurusan/tambah') ?>">Data Jurusan</a>
 							<a class="dropdown-item" href="<?= base_url('kelas/tambah') ?>">Data kelas</a>
 							<a class="dropdown-item" href="<?= base_url('pegawai/tambah') ?>">Data pegawai</a>
