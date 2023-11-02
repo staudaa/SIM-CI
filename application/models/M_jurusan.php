@@ -36,9 +36,16 @@ class M_jurusan extends CI_Model
     $this->db->update('konsentrasi_keahlian', $data);
   }
 
-  public function hapusJurusan($Id) 
-    {
-        $this->db->where('id_keahlian', $Id);
-        $this->db->delete('konsentrasi_keahlian');
-    }
+  public function hapusJurusan($Id)
+  {
+    $this->db->where('id_keahlian', $Id);
+    $this->db->delete('konsentrasi_keahlian');
+  }
+
+  function jurusan()
+  {
+    $this->db->select('*');
+    $this->db->from('konsentrasi_keahlian');
+    return $this->db->get()->num_rows();
+  }
 }

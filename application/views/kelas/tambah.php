@@ -21,7 +21,7 @@
             <div class="form-group">
               <label for="nama_kelas">nama_kelas</label>
               <input type="text" class="form-control" id="nama_kelas" name="nama_kelas">
-             
+
             </div>
             <div class="form-group">
               <label for="wali_kelas">wali_kelas</label>
@@ -31,21 +31,17 @@
               </small>
             </div>
 
-
-            <!-- <div class="form-group">
-              <label for="jenis">jenis barang</label>
-              <select class="form-control" id="jenis" name="jenis">
-              <option value="Islam">barang baku</option>
-                <option value="barang mentah">barang mentah</option>
-                <option value="barang jadi">barang jadi</option>
-                <option value="barang setengah jadi">barang setengah jadi</option> 
-              </select>
-            </div> -->
-
-
-
-
-            <button type="submit" name="tambah" class="btn btn-primary float-right"> Tambah Data</button>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-sm-9">
+                  <a href="<?= base_url('kelas') ?>" class="btn btn-primary">Back</a>
+                </div>
+                <div class="col-sm-3" align="right">
+                  <button type="submit" name="tambah" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+            
           </form>
 
         </div>

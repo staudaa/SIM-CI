@@ -45,8 +45,16 @@
                             <small class="form-text text-danger"><?= form_error('status_pegawai'); ?></small>
                         </div>
 
-                        <a href="<?= base_url('pegawai') ?>" class="btn btn-primary">Kembali</a>
-                        <button type="submit" name="edit" class="btn btn-primary float-right"> Edit Data</button>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <a href="<?= base_url('pegawai') ?>" class="btn btn-primary">Back</a>
+                                </div>
+                                <div class="col-sm-3" align="right">
+                                    <button type="submit" name="edit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
 
                 </div>

@@ -25,7 +25,7 @@
   <link href="<?= base_url('asset') ?>/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="<?= base_url('asset') ?>/assets/css/style.css" rel="stylesheet">
+  <link href="<?= base_url('asset') ?>/assets/css/sty.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Personal
@@ -97,7 +97,7 @@
                 <li><i class="bi bi-chevron-right"></i> <span>Menumbuhkan semangat kompetitif dan kreatif kepada seluruh warga sekolah</span></li>
                 <li><i class="bi bi-chevron-right"></i> <span>Melaksanakan KTSP yang terintegrasi pendidikan karakter dan lingkungan hidup</span></li>
                 <li><i class="bi bi-chevron-right"></i> <span>Membangun potensi dan mengembangkan budaya belajar, gemar membaca dan menulis serta peduli terhadap lingkungan</span></li>
-                
+
               </ul>
             </div>
             <div class="col-lg-6">
@@ -109,7 +109,7 @@
               </ul>
             </div>
           </div>
-          
+
         </div>
       </div>
 
@@ -123,32 +123,32 @@
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
             <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
+            <span data-purecounter-start="0" data-purecounter-end="<?= $row ?>" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data Siswa/Siswi</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="count-box">
             <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
+            <span data-purecounter-start="0" data-purecounter-end="<?= $kelas ?>" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data Kelas</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
+            <span data-purecounter-start="0" data-purecounter-end="<?= $jurusan ?>" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data Konsentrasi keahlian</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
+            <span data-purecounter-start="0" data-purecounter-end="<?= $pegawai ?>" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Data Pegawai</p>
           </div>
         </div>
 
@@ -156,7 +156,7 @@
 
     </div><!-- End Counts -->
 
-   
+
 
     <!-- ======= Interests ======= -->
     <div class="interests container">
@@ -169,54 +169,56 @@
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
             <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <a href="<?= base_url('landing/rpl/') ?>"><h3>Rekayasa Perangkat Lunak</h3></a>
+            <a href="<?= base_url('landing/rpl/') ?>">
+              <h3>Rekayasa Perangkat Lunak</h3>
+            </a>
           </div>
         </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3>Teknik Komputer dan Jaringan</h3>
-            </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+            <h3>Teknik Komputer dan Jaringan</h3>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3>Produksi Siaran Program Televisi</h3>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+            <h3>Produksi Siaran Program Televisi</h3>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3>Desain Komunikasi Visul</h3>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+            <h3>Desain Komunikasi Visul</h3>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3>Lembaga Perbangkan</h3>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-database-2-line" style="color: #47aeff;"></i>
+            <h3>Lembaga Perbangkan</h3>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3>Bisnis Digital</h3>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+            <h3>Bisnis Digital</h3>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3>Manajemen Perkantoran</h3>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+            <h3>Manajemen Perkantoran</h3>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3>Akuntansi</h3>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+            <h3>Akuntansi</h3>
           </div>
-  
-  
-        </div><!-- End Interests -->
+        </div>
+
+
+      </div><!-- End Interests -->
 
     </div><!-- End Interests -->
 
@@ -542,13 +544,17 @@
         <p>Contact Me</p>
       </div>
 
+      <div class="row mt-2 mb-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.7837898182847!2d113.8360619737481!3d-7.917639278814681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6dcb914a78cff%3A0xc529d84253821bd1!2sSMKN%201%20Bondowoso!5e0!3m2!1sid!2sid!4v1698736878696!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
       <div class="row mt-2">
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>My Address</h3>
-            <p>A108 Adam Street, New York, NY 535022</p>
+            <p>3RJQ+P9R smk negeri 1, Jl. HOS Cokroaminoto, Kademangan, Bondowoso, Bondowoso Regency, East Java 68217</p>
           </div>
         </div>
 
@@ -577,33 +583,10 @@
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Call Me</h3>
-            <p>+1 5589 55488 55</p>
+            <p>(0332) 431201</p>
           </div>
         </div>
       </div>
-
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
 
     </div>
   </section><!-- End Contact Section -->

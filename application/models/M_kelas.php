@@ -34,13 +34,16 @@ class M_kelas extends CI_Model
     $this->db->where('id_kelas', $this->input->post('id_kelas'));
     $this->db->update('kelas', $data);
   }
-  public function hapusKelas($Id) 
-    {
-        $this->db->where('id_kelas', $Id);
-        $this->db->delete('kelas');
-    }
+  public function hapusKelas($Id)
+  {
+    $this->db->where('id_kelas', $Id);
+    $this->db->delete('kelas');
+  }
+
+  function kelas()
+  {
+    $this->db->select('*');
+    $this->db->from('kelas');
+    return $this->db->get()->num_rows();
+  }
 }
-
-
-
-?>

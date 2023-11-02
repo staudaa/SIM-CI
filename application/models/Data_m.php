@@ -130,4 +130,11 @@ class Data_m extends CI_Model
 		$this->db->where('id_data', $id);
 		$this->db->delete('data');
 	}
+
+	function data()
+	{
+	  $this->db->select('*');
+	  $this->db->from('data');
+	  return $this->db->get()->num_rows();
+	}
 }

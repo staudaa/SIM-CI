@@ -37,9 +37,16 @@ class M_pegawai extends CI_Model
     $this->db->update('pegawai', $data);
   }
 
-  public function hapusPegawai($id) 
-    {
-        $this->db->where('id_pegawai', $id);
-        $this->db->delete('pegawai');
-    }
+  public function hapusPegawai($id)
+  {
+    $this->db->where('id_pegawai', $id);
+    $this->db->delete('pegawai');
+  }
+
+  function pegawai()
+  {
+    $this->db->select('*');
+    $this->db->from('pegawai');
+    return $this->db->get()->num_rows();
+  }
 }

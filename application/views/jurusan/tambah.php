@@ -36,8 +36,16 @@
         <!-- /.card-body -->
 
         <div class="card-footer">
-          <button type="submit" name="tambah" class="btn btn-primary">Submit</button>
+          <div class="row">
+            <div class="col-sm-9">
+            <a href="<?= base_url('jurusan') ?>" class="btn btn-primary">Back</a>
+            </div>
+            <div class="col-sm-3" align="right">
+            <button type="submit" name="tambah" class="btn btn-primary" >Submit</button>
+            </div>
+          </div>
         </div>
+
       </form>
     </div>
     <!-- /.card -->
