@@ -10,13 +10,15 @@ class Dashboard extends CI_Controller {
   }
 
   public function index(){
-    $data['title']='dashboard';
+    $data['title']= 'Dashboard';
 
-   
     $data['row'] = $this->Data_m->data();
     $data['jurusan'] = $this->M_jurusan->jurusan();
     $data['kelas'] = $this->M_kelas->kelas();
     $data['pegawai'] = $this->M_pegawai->pegawai();
+
+		$data["laki"] = $this->Data_m->getSiswaCowo();
+		$data["cewe"] = $this->Data_m->getSiswaCewe();
 
     $this->load->view('template/header', $data);
     $this->load->view('template/sidebar');
@@ -24,7 +26,3 @@ class Dashboard extends CI_Controller {
     $this->load->view('template/footer');
   }
 }
-
-
-
-?>
