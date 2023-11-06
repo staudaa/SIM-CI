@@ -22,8 +22,8 @@
 				foreach ($row->result() as $key => $data) { ?>
 					<tr>
 						<td><?= $no++ ?></td>
-						<td><?= $data->id_kelas ?></td>
-						<td><?= $data->id_keahlian ?></td>
+						<td><?= $data->nama_kelas ?></td>
+						<td><?= $data->nama_keahlian ?></td>
 						<td><?= $data->nama_siswa ?></td>
 						<td><?= $data->jenis_kelamin ?></td>
 						<td><?= $data->nomer_induk ?></td>

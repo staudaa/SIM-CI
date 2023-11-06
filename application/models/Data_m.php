@@ -5,7 +5,10 @@ class Data_m extends CI_Model
 {
 	public function get($id = null)
 	{
+		$this->db->select('data.*, kelas.nama_kelas as nama_kelas, konsentrasi_keahlian.nama_keahlian as nama_keahlian');
 		$this->db->from('data');
+		$this->db->join('kelas', 'kelas.id_kelas = data.id_kelas');
+		$this->db->join('konsentrasi_keahlian', 'konsentrasi_keahlian.id_keahlian = data.id_keahlian');
 		if ($id != null) {
 			$this->db->where('id_data', $id);
 		}
