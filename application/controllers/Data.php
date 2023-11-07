@@ -6,7 +6,7 @@ class Data extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('data_m', 'm_kelas');
+		$this->load->model('data_m');
 	}
 	public function index()
 	{
@@ -23,12 +23,12 @@ class Data extends CI_Controller
 	{
 		$dt = new stdClass();
 		$dt->id_data = null;
-		// $dt->id_kelas = null;
-		$query_kelas = $this->m_kelas->get();
-		$kelas[null] = '- Pilih -';
-		foreach ($query_kelas->result() as $kls) {
-			$kelas[$kls->id_kelas] = $kls->nama_kelas;
-		}
+		$dt->id_kelas = null;
+		// $query_kelas = $this->m_kelas->get();
+		// $kelas[null] = '- Pilih -';
+		// foreach ($query_kelas->result() as $kls) {
+		// 	$kelas[$kls->id_kelas] = $kls->nama_kelas;
+		// }
 
 		$dt->id_keahlian = null;
 		$dt->nama_siswa = null;
@@ -81,7 +81,7 @@ class Data extends CI_Controller
 		$data = array(
 			'page' => 'add',
 			'row' => $dt,
-			'kelas' => $kelas, 'selectedkelas' => null,
+			// 'kelas' => $kelas, 'selectedkelas' => null,
 		);
 
 		$data['title'] = 'Data Form';

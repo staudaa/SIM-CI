@@ -3,7 +3,7 @@
 		<div class="card-header">
 			<div class="row">
 				<div class="col-sm-9">
-					<!-- <h3> <?=ucfirst($page)?> Data </h3> -->
+					<h3> <?=ucfirst($page)?> Data </h3>
 				</div>
 				<div class="col-sm-3" align="right">
 					<a href="<?= site_url('data') ?>" class="btn btn-info btn-sm"><i class="fas fa-undo"></i> Kembali</a>
