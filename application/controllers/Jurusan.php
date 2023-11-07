@@ -9,7 +9,7 @@ class Jurusan extends CI_Controller
   }
   function index()
   {
-    $data['title'] = 'jurusan';
+    $data['title'] = 'Data jurusan';
     $data['jurusan'] = $this->M_jurusan->get_data();
 
     $this->load->view('template/header', $data);

@@ -1,17 +1,17 @@
 <div class="card">
-  <div class="card-header">
+  <!-- <div class="card-header">
     <h3 class="card-title">DataTable with default features</h3>
-  </div>
+  </div> -->
   <!-- /.card-header -->
   <div class="card-body">
     <table id="example1" class="table table-bordered table-striped">
       <thead>
         <tr>
           <th>no</th>
-          <th>id_keahlian</th>
-          <th>kode_kelas</th>
-          <th>nama_kelas</th>
-          <th>wali_kelas</th>
+          <th>Keahlian</th>
+          <th>kode Kelas</th>
+          <th>Nama Kelas</th>
+          <th>Wali Kelas</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -35,9 +35,9 @@
               <?php echo $dkelas['wali_kelas'] ?>
             </td>
             <td>
-              <a href="<?= base_url('kelas/edit/') ?><?= $dkelas['id_kelas']; ?>" class="btn btn-primary">edit</a>
-              <a href="<?= base_url('kelas/hapus/') ?><?= $dkelas['id_kelas']; ?>" class="btn btn-danger">hapus</a>
-              <a href="<?= base_url('kelas/detail/') ?><?= $dkelas['id_kelas']; ?>" class="btn btn-primary">detail</a>
+              <a href="<?= base_url('kelas/edit/') ?><?= $dkelas['id_kelas']; ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> </a>
+              <a href="<?= base_url('kelas/hapus/') ?><?= $dkelas['id_kelas']; ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data?')" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+              <a href="<?= base_url('kelas/detail/') ?><?= $dkelas['id_kelas']; ?>"class="btn btn-info btn-sm"><i class="fas fa-search"></i> </a>
             </td>
           </tr>
 

@@ -10,7 +10,7 @@ class Data extends CI_Controller
 	}
 	public function index()
 	{
-		$data['title'] = 'Data';
+		$data['title'] = 'Data Siswa';
 		$data['row'] = $this->data_m->get();
 
 		$this->load->view('template/header', $data);
@@ -129,5 +129,15 @@ class Data extends CI_Controller
 			echo "<script>alert('Data berhasil dihapus');</script>";
 		}
 		echo "<script>window.location='" . site_url('data') . "';</script>";
+	}
+	public function detail($id)
+	{
+		$data['title'] = 'detail data';
+		$data['row'] = $this->data_m->detail($id);
+		$this->load->view('template/header', $data);
+		$this->load->view('template/sidebar', $data);
+		$this->load->view('dataa/detail', $data);
+		$this->load->view('template/footer');
+
 	}
 }

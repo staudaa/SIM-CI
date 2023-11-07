@@ -10,7 +10,7 @@ class Pegawai extends CI_Controller
   }
   function index()
   {
-    $data['title'] = 'pegawai';
+    $data['title'] = 'Data pegawai';
     $data['pegawai'] = $this->M_pegawai->get_data();
 
     $this->load->view('template/header', $data);

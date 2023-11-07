@@ -1,17 +1,17 @@
 <div class="card">
-  <div class="card-header">
+  <!-- <div class="card-header">
     <h3 class="card-title">DataTable with default features</h3>
-  </div>
+  </div> -->
   <!-- /.card-header -->
   <div class="card-body">
     <table id="example1" class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th>no</th>
-          <th>id_kelas</th>
-          <th>nama_keahlian</th>
-          <th>kaproli</th>
-          <th>deskripsi</th>
+          <th>No</th>
+          <th>Kelas</th>
+          <th>Keahlian</th>
+          <th>Kaproli</th>
+          <th>Deskripsi</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -35,10 +35,10 @@
               <?php echo $djurusan['deskripsi'] ?>
             </td>
             <td>
-              <a href="<?= base_url('jurusan/edit/') ?><?= $djurusan['id_keahlian']; ?>" class="btn btn-primary">edit</a>
-              <a href="<?= base_url('jurusan/hapus/') ?><?= $djurusan['id_keahlian']; ?>" class="btn btn-danger">hapus</a>
+              <a href="<?= base_url('jurusan/edit/') ?><?= $djurusan['id_keahlian']; ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> </a>
+              <a href="<?= base_url('jurusan/hapus/') ?><?= $djurusan['id_keahlian']; ?>"  onclick="return confirm('Apakah anda yakin ingin menghapus data?')" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
               <a href="<?= base_url('jurusan/detail/') ?><?= $djurusan['id_keahlian']; ?>"
-                class="btn btn-primary">detail</a>
+              class="btn btn-info btn-sm"><i class="fas fa-search"></i> </a>
             </td>
           </tr>
         </tbody>

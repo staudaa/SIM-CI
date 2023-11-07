@@ -138,15 +138,21 @@ class Data_m extends CI_Model
 		return $this->db->get()->num_rows();
 	}
 
-	public function getSiswaCowo() {
+	public function getSiswaCowo()
+	{
 		$this->db->where('jenis_kelamin', 'Laki-laki');
 		$this->db->from('data');
 		return $this->db->count_all_results();
 	}
 
-	public function getSiswaCewe() {
+	public function getSiswaCewe()
+	{
 		$this->db->where('jenis_kelamin', 'Perempuan');
 		$this->db->from('data');
 		return $this->db->count_all_results();
+	}
+	public function detail($id_data)
+	{
+		return $this->db->get_where('data', ['id_data' => $id_data])->row_array();
 	}
 }

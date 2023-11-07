@@ -1,18 +1,17 @@
 <div class="card">
-  <div class="card-header">
+  <!-- <div class="card-header">
     <h3 class="card-title">DataTable with default features</h3>
-  </div>
+  </div> -->
   <!-- /.card-header -->
   <div class="card-body">
     <table id="example1" class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th>no</th>
-          <th>nama_pegawai</th>
-          <th>tempat_lahir_pegawai</th>
-          <th>tanggal_lahir_pegawai</th>
-          <th>agama_pegawai</th>
-          <th>status_pegawai</th>
+          <th>No</th>
+          <th>Nama Pegawai</th>
+          <th>Tempat Tanggal Lahir</th>
+          <th>Agama Pegawai</th>
+          <th>Status Pegawai</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -28,8 +27,6 @@
             </td>
             <td>
               <?php echo $dpegawai['tempat_lahir_pegawai'] ?>
-            </td>
-            <td>
               <?php echo $dpegawai['tanggal_lahir_pegawai'] ?>
             </td>
             <td>
@@ -39,9 +36,13 @@
               <?php echo $dpegawai['status_pegawai'] ?>
             </td>
             <td>
-              <a href="<?= base_url('pegawai/edit/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-primary">Edit</a>
-              <a href="<?= base_url('pegawai/hapus/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-danger">Hapus</a>
-              <a href="<?= base_url('pegawai/detail/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-primary">Detail</a>
+              <a href="<?= base_url('pegawai/edit/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-warning btn-sm"><i
+                  class="fas fa-edit"></i> </a>
+              <a href="<?= base_url('pegawai/hapus/') ?><?= $dpegawai['id_pegawai']; ?>"
+                onclick="return confirm('Apakah anda yakin ingin menghapus data?')" class="btn btn-danger btn-sm"><i
+                  class="fas fa-trash"></i></a>
+              <a href="<?= base_url('pegawai/detail/') ?><?= $dpegawai['id_pegawai']; ?>" class="btn btn-info btn-sm"><i
+                  class="fas fa-search"></i> </a>
             </td>
           </tr>
 

@@ -9,7 +9,7 @@ class Kelas extends CI_Controller
   }
   function index()
   {
-    $data['title'] = 'kelas';
+    $data['title'] = 'Data kelas';
     $data['kelas'] = $this->M_kelas->get_data();
 
     $this->load->view('template/header', $data);
