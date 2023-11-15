@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 04, 2023 at 01:56 AM
--- Server version: 8.0.30
--- PHP Version: 8.1.10
+-- Waktu pembuatan: 15 Nov 2023 pada 13.31
+-- Versi server: 8.0.30
+-- Versi PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data`
+-- Struktur dari tabel `data`
 --
 
 CREATE TABLE `data` (
@@ -83,7 +83,7 @@ CREATE TABLE `data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `data`
+-- Dumping data untuk tabel `data`
 --
 
 INSERT INTO `data` (`id_data`, `id_kelas`, `id_keahlian`, `nama_siswa`, `jenis_kelamin`, `nomer_induk`, `nik`, `tempat_lahir`, `tanggal_lahir`, `agama`, `kewarganegaraan`, `no_hp`, `alamat`, `rt_rw`, `dusun`, `kelurahan`, `kecamatan`, `kabupaten`, `provinsi`, `kode_pos`, `nama_ayah`, `tempat_lahir_ayah`, `tanggal_lahir_ayah`, `pendidikan_terakhir_ayah`, `pekerjaan_ayah`, `penghasilan_bulanan_ayah`, `no_hp_ayah`, `agama_ayah`, `nama_ibu`, `tempat_lahir_ibu`, `tanggal_lahir_ibu`, `pendidikan_terakhir_ibu`, `pekerjaan_ibu`, `penghasilan_bulanan_ibu`, `no_hp_ibu`, `agama_ibu`, `nama_wali`, `tempat_lahir_wali`, `tanggal_lahir_wali`, `pendidikan_terakhir_wali`, `pekerjaan_wali`, `penghasilan_bulanan_wali`, `no_hp_wali`, `agama_wali`, `foto`, `ktp_ayah`, `ktp_ibu`, `ktp_wali`, `kk_siswa`, `kk_wali`, `created`, `updated`) VALUES
@@ -94,7 +94,7 @@ INSERT INTO `data` (`id_data`, `id_kelas`, `id_keahlian`, `nama_siswa`, `jenis_k
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kelas`
+-- Struktur dari tabel `kelas`
 --
 
 CREATE TABLE `kelas` (
@@ -106,7 +106,7 @@ CREATE TABLE `kelas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `kelas`
+-- Dumping data untuk tabel `kelas`
 --
 
 INSERT INTO `kelas` (`id_kelas`, `id_keahlian`, `kode_kelas`, `nama_kelas`, `wali_kelas`) VALUES
@@ -115,7 +115,7 @@ INSERT INTO `kelas` (`id_kelas`, `id_keahlian`, `kode_kelas`, `nama_kelas`, `wal
 -- --------------------------------------------------------
 
 --
--- Table structure for table `konsentrasi_keahlian`
+-- Struktur dari tabel `konsentrasi_keahlian`
 --
 
 CREATE TABLE `konsentrasi_keahlian` (
@@ -127,7 +127,7 @@ CREATE TABLE `konsentrasi_keahlian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `konsentrasi_keahlian`
+-- Dumping data untuk tabel `konsentrasi_keahlian`
 --
 
 INSERT INTO `konsentrasi_keahlian` (`id_keahlian`, `id_kelas`, `nama_keahlian`, `kaproli`, `deskripsi`) VALUES
@@ -136,7 +136,33 @@ INSERT INTO `konsentrasi_keahlian` (`id_keahlian`, `id_kelas`, `nama_keahlian`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pegawai`
+-- Struktur dari tabel `landing`
+--
+
+CREATE TABLE `landing` (
+  `id_landing` int NOT NULL,
+  `visi` text NOT NULL,
+  `misi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `landing`
+--
+
+INSERT INTO `landing` (`id_landing`, `visi`, `misi`) VALUES
+(1, '\nTerwujudnya SMKN 1 Bondowoso sebagai sekolah yang unggul, berbudaya lingkungan dan berperilaku sesuai Pancasila.', '\nMenyiapkan tenaga yang kompeten berwawasan iman dan taqwa kepada Tuhan Yang Maha Esa.\n'),
+(2, '', 'Menumbuhkan semangat kompetitif dan kreatif kepada seluruh warga sekolah.'),
+(3, '', 'Melaksanakan KTSP yang terintegrasi pendidikan karakter dan lingkungan hidup'),
+(4, '', 'Membangun potensi dan mengembangkan budaya belajar, gemar membaca dan menulis serta peduli terhadap lingkungan'),
+(5, '', 'Meningkatkan kualitas sumber daya manusia'),
+(6, '', 'Memberdayakan lingkungan sekolah dalam mewudukkan sekolah adiwiyata'),
+(7, '', 'Mengembangkan potensi peserta didik melalui kegiatan ekstrakurikuler yang terintegrasi pendidikan karakter dan lingkungan hidup'),
+(8, '', 'Mematuhi Peraturan Protokol Kesehatan COVID-19');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pegawai`
 --
 
 CREATE TABLE `pegawai` (
@@ -149,7 +175,7 @@ CREATE TABLE `pegawai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `pegawai`
+-- Dumping data untuk tabel `pegawai`
 --
 
 INSERT INTO `pegawai` (`id_pegawai`, `nama_pegawai`, `tempat_lahir_pegawai`, `tanggal_lahir_pegawai`, `agama_pegawai`, `status_pegawai`) VALUES
@@ -158,7 +184,7 @@ INSERT INTO `pegawai` (`id_pegawai`, `nama_pegawai`, `tempat_lahir_pegawai`, `ta
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -171,7 +197,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `nama`, `alamat`, `level`) VALUES
@@ -184,7 +210,7 @@ INSERT INTO `user` (`id_user`, `username`, `password`, `nama`, `alamat`, `level`
 --
 
 --
--- Indexes for table `data`
+-- Indeks untuk tabel `data`
 --
 ALTER TABLE `data`
   ADD PRIMARY KEY (`id_data`),
@@ -192,71 +218,83 @@ ALTER TABLE `data`
   ADD KEY `id_keahlian` (`id_keahlian`);
 
 --
--- Indexes for table `kelas`
+-- Indeks untuk tabel `kelas`
 --
 ALTER TABLE `kelas`
   ADD PRIMARY KEY (`id_kelas`),
   ADD KEY `id_keahlian` (`id_keahlian`);
 
 --
--- Indexes for table `konsentrasi_keahlian`
+-- Indeks untuk tabel `konsentrasi_keahlian`
 --
 ALTER TABLE `konsentrasi_keahlian`
   ADD PRIMARY KEY (`id_keahlian`),
   ADD KEY `id_kelas` (`id_kelas`);
 
 --
--- Indexes for table `pegawai`
+-- Indeks untuk tabel `landing`
+--
+ALTER TABLE `landing`
+  ADD PRIMARY KEY (`id_landing`);
+
+--
+-- Indeks untuk tabel `pegawai`
 --
 ALTER TABLE `pegawai`
   ADD PRIMARY KEY (`id_pegawai`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `data`
+-- AUTO_INCREMENT untuk tabel `data`
 --
 ALTER TABLE `data`
   MODIFY `id_data` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `kelas`
+-- AUTO_INCREMENT untuk tabel `kelas`
 --
 ALTER TABLE `kelas`
   MODIFY `id_kelas` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `konsentrasi_keahlian`
+-- AUTO_INCREMENT untuk tabel `konsentrasi_keahlian`
 --
 ALTER TABLE `konsentrasi_keahlian`
   MODIFY `id_keahlian` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `pegawai`
+-- AUTO_INCREMENT untuk tabel `landing`
+--
+ALTER TABLE `landing`
+  MODIFY `id_landing` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT untuk tabel `pegawai`
 --
 ALTER TABLE `pegawai`
   MODIFY `id_pegawai` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `data`
+-- Ketidakleluasaan untuk tabel `data`
 --
 ALTER TABLE `data`
   ADD CONSTRAINT `data_ibfk_1` FOREIGN KEY (`id_kelas`) REFERENCES `kelas` (`id_kelas`),

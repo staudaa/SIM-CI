@@ -47,7 +47,7 @@
                 <div class="row">
 
                     <div class="col-lg-8">
-                        <h2 class="portfolio-title">Rekayasa Perangkat Lunak</h2>
+                        <h2 class="portfolio-title">Produksi Siaran Program Televisi</h2>
 
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
@@ -71,19 +71,20 @@
                     </div>
 
                     <div class="col-lg-4 portfolio-info">
-                        <h3>Yang dipelajari di jurusan RPL</h3>
+                        <h3>Yang dipelajari di jurusan PSPTV</h3>
                         <ul>
-                            <li><strong>1. </strong>Web Dinamis</li>
-                            <li><strong>2. </strong>Pemrograman Berorientasi Objek</li>
-                            <li><strong>3. </strong>Pemrograman Desktop</li>
-                            <li><strong>4. </strong>Basis Data</li>
-                            <li><strong>5. </strong>Coding</li>
-                            <li><strong>6. </strong>Algoritma</li>
+                            <li><strong>1. </strong>Pembuatan naskah acara</li>
+                            <li><strong>2. </strong>Penyutradaraan produksi acara TV dan film</li>
+                            <li><strong>3. </strong>Fotografi</li>
+                            <li><strong>4. </strong>Pengoperasian Kamera Video</li>
+                            <li><strong>5. </strong>Editing Video</li>
+                            <li><strong>6. </strong>Tata Cahaya</li>
+                            <li><strong>7. </strong>Tata Suara</li>
+                            <li><strong>8. </strong>Manajemen produksi acara TV dan film</li>
                         </ul>
 
                         <p>
-                        Jurusan Rekayasa Perangkat Lunak merupakan jurusan yang didalamnya mempelajari prinsip sekaligus teknik mendesain perangkat lunak yang mudah digunakan dan tepat guna. Jurusan yang juga disebut Software Engineering ini bisa menjadi wadah yang tepat bagi kamu yang ingin mempelajari desain program dan mengembangkan sebuah software ataupun sistem operasi.
-                        </p>
+                        Produksi Siaran Program Televisi biasa disebut broadcasting. Produksi Siaran Program Televisi adalah suatu proses pengiriman sinyal ke berbagai lokasi secara bersamaan. Proses ini bisa melalui satelit, radio, televisi, komunikasi data pada jaringan dan lain sebagainya.                        </p>
                         <a href="<?= base_url('landing/index') ?>" class="btn btn-primary">Kembali</a>
                     </div>
 

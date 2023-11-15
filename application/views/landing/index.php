@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>SIM</title>
-  <meta content="" name="description"> 
+  <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -87,26 +87,22 @@
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Visi</h3>
           <p>
-            Terwujudnya SMKN 1 Bondowoso sebagai sekolah yang unggul, berbudaya lingkungan dan berperilaku sesuai Pancasila
+            <?php foreach ($landing as $dlanding) : ?>
+              <?= $dlanding['visi']; ?>
+            <?php endforeach; ?>
+
           </p>
           <div class="row">
             <h3>Misi</h3>
             <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <span>Menyiapkan tenaga yang kompeten berwawasan iman dan taqwa kepada Tuhan Yang Maha Esa</span></li>
-                <li><i class="bi bi-chevron-right"></i> <span>Menumbuhkan semangat kompetitif dan kreatif kepada seluruh warga sekolah</span></li>
-                <li><i class="bi bi-chevron-right"></i> <span>Melaksanakan KTSP yang terintegrasi pendidikan karakter dan lingkungan hidup</span></li>
-                <li><i class="bi bi-chevron-right"></i> <span>Membangun potensi dan mengembangkan budaya belajar, gemar membaca dan menulis serta peduli terhadap lingkungan</span></li>
-
-              </ul>
+              <?php foreach ($landing as $dlanding) : ?>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <span><?= $dlanding['misi']; ?></span></li>
+                </ul>
             </div>
+
             <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <span>Meningkatkan kualitas sumber daya manusia</span></li>
-                <li><i class="bi bi-chevron-right"></i> <span>Memberdayakan lingkungan sekolah dalam mewudukkan sekolah adiwiyata</span></li>
-                <li><i class="bi bi-chevron-right"></i> <span>Mengembangkan potensi peserta didik melalui kegiatan ekstrakurikuler yang terintegrasi pendidikan karakter dan lingkungan hidup</span></li>
-                <li><i class="bi bi-chevron-right"></i> <span>Mematuhi Peraturan Protokol Kesehatan COVID-19</span></li>
-              </ul>
+            <?php endforeach; ?>
             </div>
           </div>
 
@@ -177,19 +173,25 @@
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Teknik Komputer dan Jaringan</h3>
+            <a href="<?= base_url('landing/tkj/') ?>">
+              <h3>Teknik Komputer dan Jaringan</h3>
+            </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Produksi Siaran Program Televisi</h3>
+            <a href="<?= base_url('landing/psptv/') ?>">
+              <h3>Produksi Siaran Program Televisi</h3>
+            </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
             <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Desain Komunikasi Visul</h3>
+            <a href="<?= base_url('landing/dkv/') ?>">
+              <h3>Desain Komunikasi Visul</h3>
+            </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">

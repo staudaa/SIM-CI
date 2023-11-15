@@ -47,7 +47,7 @@
                 <div class="row">
 
                     <div class="col-lg-8">
-                        <h2 class="portfolio-title">Rekayasa Perangkat Lunak</h2>
+                        <h2 class="portfolio-title">Desain Komunikasi Visual</h2>
 
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="col-lg-4 portfolio-info">
-                        <h3>Yang dipelajari di jurusan RPL</h3>
+                        <h3>Yang dipelajari di jurusan DKV</h3>
                         <ul>
                             <li><strong>1. </strong>Web Dinamis</li>
                             <li><strong>2. </strong>Pemrograman Berorientasi Objek</li>

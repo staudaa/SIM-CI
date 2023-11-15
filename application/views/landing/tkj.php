@@ -47,7 +47,7 @@
                 <div class="row">
 
                     <div class="col-lg-8">
-                        <h2 class="portfolio-title">Rekayasa Perangkat Lunak</h2>
+                        <h2 class="portfolio-title">Teknik Komputer Jaringan </h2>
 
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
@@ -71,19 +71,15 @@
                     </div>
 
                     <div class="col-lg-4 portfolio-info">
-                        <h3>Yang dipelajari di jurusan RPL</h3>
+                        <h3>Yang dipelajari di jurusan TKJ</h3>
                         <ul>
-                            <li><strong>1. </strong>Web Dinamis</li>
-                            <li><strong>2. </strong>Pemrograman Berorientasi Objek</li>
-                            <li><strong>3. </strong>Pemrograman Desktop</li>
-                            <li><strong>4. </strong>Basis Data</li>
-                            <li><strong>5. </strong>Coding</li>
-                            <li><strong>6. </strong>Algoritma</li>
+                            <li><strong>1. </strong>Perakitan Komputer dan Troubleshooting Komputer.</li>
+                            <li><strong>2. </strong>Jaringan Komputer.</li>
+                            <li><strong>3. </strong>Pemrograman Aplikasi dan Web.</li>
                         </ul>
 
                         <p>
-                        Jurusan Rekayasa Perangkat Lunak merupakan jurusan yang didalamnya mempelajari prinsip sekaligus teknik mendesain perangkat lunak yang mudah digunakan dan tepat guna. Jurusan yang juga disebut Software Engineering ini bisa menjadi wadah yang tepat bagi kamu yang ingin mempelajari desain program dan mengembangkan sebuah software ataupun sistem operasi.
-                        </p>
+                        Teknik Jaringan Komputer dan Telekomunikasi merupakan ilmu berbasis Teknologi Informasi dan Komunikasi terkait kemampuan algoritma, dan pemrograman komputer, perakitan komputer, perakitan jaringan komputer, dan pengoperasian perangkat lunak, dan internet.                        </p>
                         <a href="<?= base_url('landing/index') ?>" class="btn btn-primary">Kembali</a>
                     </div>
 
